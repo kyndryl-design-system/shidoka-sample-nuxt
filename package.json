@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/svg": "^0.4.1",
+    "nuxt": "^3.8.0",
+    "sass": "^1.69.5",
+    "vue": "^3.3.7",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@carbon/icons-vue": "^10.72.1",
+    "@kyndryl-design-system/shidoka-applications": "^1.0.0-beta.69",
+    "@kyndryl-design-system/shidoka-charts": "^1.0.0-beta.14",
+    "@kyndryl-design-system/shidoka-foundation": "^1.0.0-beta.38"
+  }
+}
