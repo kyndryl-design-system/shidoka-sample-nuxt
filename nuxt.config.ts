@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     '@kyndryl-design-system/shidoka-foundation/scss/utility/typography.scss',
     '@kyndryl-design-system/shidoka-foundation/scss/utility/grid.scss',
   ],
-  buildModules: ['@nuxtjs/svg'],
+  modules: ['nuxt-svgo']
 });
