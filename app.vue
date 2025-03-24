@@ -5,6 +5,7 @@ import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 import '@kyndryl-design-system/shidoka-applications/components/global/footer';
 import '@kyndryl-design-system/shidoka-charts/components/chart';
 import UserAvatar20 from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/user.svg';
+import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg';
 </script>
 
 <template>
@@ -12,23 +13,22 @@ import UserAvatar20 from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20
     <kyn-header divider appTitle="Shidoka Nuxt">
 
       <kyn-header-nav>
-        <kyn-header-link href="javascript:void(0)"> Link 1 </kyn-header-link>
-        <kyn-header-link href="javascript:void(0)" isActive> Link 2 </kyn-header-link>
+        <kyn-header-link href="javascript:void(0)"> <sampleIcon class="iconStyle"/>
+          Link 1 </kyn-header-link>
+        <kyn-header-link href="javascript:void(0)" isActive> <sampleIcon class="iconStyle" />Link 2 </kyn-header-link>
         <kyn-header-link href="javascript:void(0)">
+          <sampleIcon class="iconStyle" />
           Link 3
-
           <kyn-header-link slot="links" href="javascript:void(0)"> Sub Link # 1 </kyn-header-link>
           <kyn-header-link slot="links" href="javascript:void(0)"> Sub Link 2 </kyn-header-link>
         </kyn-header-link>
       </kyn-header-nav>
 
       <kyn-header-flyouts>
-        <kyn-header-flyout>
-          <span slot="button">Sign in</span>
-          <div>
+        <kyn-header-flyout label="Account">
+          <UserAvatar20 slot="button" class="iconStyle"/>
             <kyn-header-link href="javascript:void(0)"> Login </kyn-header-link>
             <kyn-header-link href="javascript:void(0)"> Sign up </kyn-header-link>
-          </div>
         </kyn-header-flyout>
 
         <kyn-header-flyout assistiveText="My Account" hideArrow>

@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      meta: [
+        { name: 'color-scheme', content: 'light dark' },
+      ],
+    },
+  },
   devtools: { enabled: true },
   ssr: false,
   css: [
@@ -9,3 +16,5 @@ export default defineNuxtConfig({
   ],
   modules: ['nuxt-svgo']
 });
+
+
