@@ -145,7 +145,7 @@ import UserAvatar20 from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20
 <style>
 .iconStyle {
   height: auto;
-      margin-bottom: 0;
-    width: 20px;
+  margin-bottom: 0;
+  width: 20px;
 }
 </style>
