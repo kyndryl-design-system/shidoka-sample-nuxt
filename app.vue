@@ -4,51 +4,31 @@ import '@kyndryl-design-system/shidoka-applications/components/global/header';
 import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 import '@kyndryl-design-system/shidoka-applications/components/global/footer';
 import '@kyndryl-design-system/shidoka-charts/components/chart';
-
-import SwitcherIcon from '@kyndryl-design-system/shidoka-foundation/assets/svg/switcher.svg?raw';
-import UserAvatar24 from '@carbon/icons-vue/es/user--avatar/24';
-import UserAvatar20 from '@carbon/icons-vue/es/user--avatar/20';
+import UserAvatar20 from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/user.svg';
+import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg';
 </script>
 
 <template>
   <kyn-ui-shell>
     <kyn-header divider appTitle="Shidoka Nuxt">
-      <kyn-header-panel slot="left" heading="Panel Heading">
-        <span slot="button" v-html="SwitcherIcon"></span>
-
-        <kyn-header-panel-link href="javascript:void(0)">
-          <UserAvatar24 />
-          Link 1
-        </kyn-header-panel-link>
-        <kyn-header-panel-link href="javascript:void(0)">
-          <UserAvatar24 />
-          Link 2
-        </kyn-header-panel-link>
-        <kyn-header-panel-link href="javascript:void(0)">
-          <UserAvatar24 />
-          Link 3
-        </kyn-header-panel-link>
-      </kyn-header-panel>
 
       <kyn-header-nav>
-        <kyn-header-link href="javascript:void(0)"> Link 1 </kyn-header-link>
-        <kyn-header-link href="javascript:void(0)" isActive> Link 2 </kyn-header-link>
+        <kyn-header-link href="javascript:void(0)"> <sampleIcon class="iconStyle"/>
+          Link 1 </kyn-header-link>
+        <kyn-header-link href="javascript:void(0)" isActive> <sampleIcon class="iconStyle" />Link 2 </kyn-header-link>
         <kyn-header-link href="javascript:void(0)">
+          <sampleIcon class="iconStyle" />
           Link 3
-
           <kyn-header-link slot="links" href="javascript:void(0)"> Sub Link # 1 </kyn-header-link>
           <kyn-header-link slot="links" href="javascript:void(0)"> Sub Link 2 </kyn-header-link>
         </kyn-header-link>
       </kyn-header-nav>
 
       <kyn-header-flyouts>
-        <kyn-header-flyout>
-          <span slot="button">Sign in</span>
-
-          <div>
+        <kyn-header-flyout label="Account">
+          <UserAvatar20 slot="button" class="iconStyle"/>
             <kyn-header-link href="javascript:void(0)"> Login </kyn-header-link>
             <kyn-header-link href="javascript:void(0)"> Sign up </kyn-header-link>
-          </div>
         </kyn-header-flyout>
 
         <kyn-header-flyout assistiveText="My Account" hideArrow>
@@ -61,12 +41,12 @@ import UserAvatar20 from '@carbon/icons-vue/es/user--avatar/20';
 
     <kyn-local-nav>
       <kyn-local-nav-link href="javascript:void(0)" active="">
-        <UserAvatar20 slot="icon" />
+        <UserAvatar20 class="iconStyle" slot="icon" />
         Link 1
       </kyn-local-nav-link>
 
       <kyn-local-nav-link href="javascript:void(0)">
-        <UserAvatar20 slot="icon" />
+        <UserAvatar20 class="iconStyle" slot="icon" />
         Link 2
 
         <kyn-local-nav-link slot="links" href="javascript:void(0)"> L2 Link 1 </kyn-local-nav-link>
@@ -74,7 +54,7 @@ import UserAvatar20 from '@carbon/icons-vue/es/user--avatar/20';
       </kyn-local-nav-link>
 
       <kyn-local-nav-link href="javascript:void(0)" expanded="">
-        <UserAvatar20 slot="icon" />
+        <UserAvatar20 class="iconStyle" slot="icon" />
         Link 3
 
         <kyn-local-nav-link slot="links" href="javascript:void(0)">
@@ -157,7 +137,15 @@ import UserAvatar20 from '@carbon/icons-vue/es/user--avatar/20';
     </main>
 
     <kyn-footer>
-      <span slot="copyright"> Copyright &copy; 2023 Kyndryl Inc. All rights reserved. </span>
+      <span slot="copyright"> Copyright &copy; 2025 Kyndryl Inc. All rights reserved. </span>
     </kyn-footer>
   </kyn-ui-shell>
 </template>
+
+<style>
+.iconStyle {
+  height: auto;
+  margin-bottom: 0;
+  width: 20px;
+}
+</style>

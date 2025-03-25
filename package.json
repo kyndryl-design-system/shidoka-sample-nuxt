@@ -11,16 +11,16 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/svg": "^0.4.1",
     "nuxt": "^3.8.0",
+    "nuxt-svgo": "latest",
     "sass": "^1.69.5",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@carbon/icons-vue": "^10.72.1",
-    "@kyndryl-design-system/shidoka-applications": "^1.0.0-beta.69",
-    "@kyndryl-design-system/shidoka-charts": "^1.0.0-beta.14",
-    "@kyndryl-design-system/shidoka-foundation": "^1.0.0-beta.38"
+    "@kyndryl-design-system/shidoka-applications": "^2.20.0",
+    "@kyndryl-design-system/shidoka-charts": "^2.0.2",
+    "@kyndryl-design-system/shidoka-foundation": "^2.4.3",
+    "@kyndryl-design-system/shidoka-icons": "^2.4.0"
   }
 }
